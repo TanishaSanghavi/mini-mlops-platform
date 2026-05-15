@@ -1,0 +1,10 @@
+artifact_location: file:///C:/Users/Administrator/Downloads/mini-mlops-platform/experiments/865698840109051795/models/m-e2e700f211bd41dc9c8217c383c84bf1/artifacts
+creation_timestamp: 1778865609781
+experiment_id: '865698840109051795'
+last_updated_timestamp: 1778865620067
+model_id: m-e2e700f211bd41dc9c8217c383c84bf1
+model_type: null
+name: model
+source_run_id: 1ff1475aad784b6981e922f53a97cc53
+status: 2
+status_message: null

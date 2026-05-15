@@ -1,0 +1,33 @@
+version: "3.9"
+
+services:
+  app:
+    build: .
+    container_name: mlops_app
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./models:/app/models
+      - ./data:/app/data
+    depends_on:
+      - mlflow
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  mlflow:
+    image: python:3.10-slim
+    container_name: mlflow_server
+    working_dir: /mlflow
+    volumes:
+      - ./mlruns:/mlflow/mlruns
+    command: >
+      sh -c "pip install mlflow &&
+             mlflow server
+             --host 0.0.0.0
+             --port 5000
+             --backend-store-uri file:///mlflow/mlruns"
+    ports:
+      - "5000:5000"

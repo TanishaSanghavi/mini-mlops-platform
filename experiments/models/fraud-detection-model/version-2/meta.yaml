@@ -1,0 +1,16 @@
+creation_timestamp: 1778867257405
+current_stage: Staging
+deployment_job_state: null
+description: null
+last_updated_timestamp: 1778867257539
+model_id: m-1405d00366bd4dcab6c264302ac589ee
+name: fraud-detection-model
+run_id: a1d6881492704772bf8ba2a56e056e31
+run_link: null
+source: models:/m-1405d00366bd4dcab6c264302ac589ee
+status: READY
+status_message: null
+storage_location: file:///C:/Users/Administrator/Downloads/mini-mlops-platform/experiments/865698840109051795/models/m-1405d00366bd4dcab6c264302ac589ee/artifacts
+user_id: null
+version: 2
+workspace: default

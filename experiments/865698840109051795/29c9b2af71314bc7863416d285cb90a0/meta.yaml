@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/Administrator/Downloads/mini-mlops-platform/experiments/865698840109051795/29c9b2af71314bc7863416d285cb90a0/artifacts
+end_time: 1778867149783
+entry_point_name: ''
+experiment_id: '865698840109051795'
+lifecycle_stage: active
+run_id: 29c9b2af71314bc7863416d285cb90a0
+run_name: fraud-logreg-balanced
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1778867114892
+status: 3
+tags: []
+user_id: Administrator
