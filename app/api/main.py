@@ -139,3 +139,10 @@ def predict(request: PredictionRequest) -> dict[str, int | str]:
         "prediction": prediction,
         "label": "fraud" if prediction == 1 else "not_fraud",
     }
+@app.get("/")
+def root():
+    return {
+        "project": "Mini MLOps Platform",
+        "status": "Running",
+        "docs": "/docs"
+    }
